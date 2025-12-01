@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator — Project 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="card">
+        <header>
+            <div>
+                <h1>Password Generator</h1>
+                <p class="lead">Create strong, random passwords with customizable rules.</p>
+            </div>
+            <small>Project 11</small>
+        </header>
+
+        <section class="output-row">
+            <div class="password-box" id="passwordBox">
+                <div class="pw-text" id="password">—</div>
+            </div>
+            <button class="btn" id="generateBtn">Generate</button>
+            <button class="secondary" id="copyBtn">Copy</button>
+        </section>
+
+        <section class="controls">
+            <div class="panel">
+                <div class="row">
+                    <label for="length">Length</label>
+                    <input type="range" id="length" min="6" max="64" value="16">
+                    <span id="lengthVal">16</span>
+                </div>
+
+                <div class="toggles">
+                    <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+                    <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+                    <label><input type="checkbox" id="numbers" checked> Numbers</label>
+                    <label><input type="checkbox" id="symbols" checked> Symbols</label>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <small>Tip: Use a password manager to store generated passwords</small>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
